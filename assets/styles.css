@@ -1,0 +1,83 @@
+/* Базовые стили */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Segoe UI', sans-serif;
+	background: #1e1e1e;
+	color: #eee;
+	line-height: 1.5;
+}
+a {
+	color: #7fdfff;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+/* Навигация */
+.navbar {
+	background: #111;
+	padding: 10px 20px;
+	display: flex;
+	gap: 15px;
+}
+.navbar a {
+	padding: 6px 12px;
+	border-radius: 4px;
+}
+.navbar a.active,
+.navbar a:hover {
+	background: #333;
+}
+
+/* Заголовки */
+header {
+	padding: 20px;
+	background: #222;
+	text-align: center;
+}
+header h1 {
+	font-size: 2rem;
+}
+
+/* Основной контент */
+main {
+	max-width: 800px;
+	margin: 20px auto;
+	padding: 20px;
+	background: #2a2a2a;
+	border-radius: 6px;
+}
+
+/* Списки */
+.chapters-list,
+.endings-list,
+.team-list {
+	margin: 15px 0 0 20px;
+}
+.chapters-list li,
+.endings-list li,
+.team-list li {
+	margin-bottom: 10px;
+}
+
+/* Выборы */
+.choices {
+	margin-top: 30px;
+	text-align: center;
+}
+.choice-btn {
+	display: inline-block;
+	margin: 5px;
+	padding: 10px 20px;
+	background: #444;
+	border-radius: 4px;
+	transition: background 0.2s;
+}
+.choice-btn:hover {
+	background: #555;
+}
