@@ -1,71 +1,63 @@
-/* Базовые стили */
+/* Сброс */
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
+
+/* Базовые */
 body {
 	font-family: 'Segoe UI', sans-serif;
 	background: #1e1e1e;
 	color: #eee;
-	line-height: 1.5;
-}
-a {
-	color: #7fdfff;
-	text-decoration: none;
-}
-a:hover {
-	text-decoration: underline;
+	line-height: 1.6;
+	padding-top: 70px; /* для фиксированного header */
 }
 
-/* Навигация */
-.navbar {
+/* Header */
+.site-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 60px;
 	background: #111;
-	padding: 10px 20px;
 	display: flex;
-	gap: 15px;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 20px;
+	z-index: 1000;
 }
-.navbar a {
-	padding: 6px 12px;
+.logo {
+	height: 40px;
+}
+.site-nav a {
+	color: #7fdfff;
+	text-decoration: none;
+	margin-left: 15px;
+	padding: 6px 10px;
 	border-radius: 4px;
 }
-.navbar a.active,
-.navbar a:hover {
+.site-nav a:hover,
+.site-nav a.active {
 	background: #333;
 }
 
-/* Заголовки */
-header {
-	padding: 20px;
-	background: #222;
-	text-align: center;
-}
-header h1 {
-	font-size: 2rem;
-}
-
-/* Основной контент */
+/* Основной контейнер */
 main {
 	max-width: 800px;
-	margin: 20px auto;
+	margin: 40px auto;
 	padding: 20px;
 	background: #2a2a2a;
 	border-radius: 6px;
 }
 
-/* Списки */
-.chapters-list,
-.endings-list,
-.team-list {
-	margin: 15px 0 0 20px;
-}
-.chapters-list li,
-.endings-list li,
-.team-list li {
-	margin-bottom: 10px;
+/* Домашняя страница */
+main.home {
+	text-align: center;
 }
 
-/* Выборы */
+/* Кнопки выбора */
 .choices {
 	margin-top: 30px;
 	text-align: center;
@@ -73,11 +65,21 @@ main {
 .choice-btn {
 	display: inline-block;
 	margin: 5px;
-	padding: 10px 20px;
+	padding: 12px 24px;
 	background: #444;
 	border-radius: 4px;
+	color: #eee;
+	text-decoration: none;
 	transition: background 0.2s;
 }
 .choice-btn:hover {
 	background: #555;
+}
+
+/* Блоки диалога */
+blockquote {
+	margin: 15px 30px;
+	padding: 10px 20px;
+	background: #333;
+	border-left: 4px solid #7fdfff;
 }
