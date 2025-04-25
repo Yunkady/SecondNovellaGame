@@ -124,7 +124,7 @@ nav.topnav a:hover::after {
 	position: relative;
 	text-align: justify;
 	width: 90%;
-	max-width: 800px;
+	max-width: 900px;
 	margin: 30px auto;
 	background: rgba(24, 24, 24, 0.9);
 	backdrop-filter: blur(10px);
