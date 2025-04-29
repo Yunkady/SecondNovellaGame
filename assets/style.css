@@ -430,3 +430,8 @@ body.home:has(.header-title h1:contains('Тени Элдариса')) .container
 		opacity: 1;
 	}
 }
+
+.audio {
+	opacity: 0.33;
+	text-align: center;
+}
